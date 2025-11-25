@@ -1,147 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yaely Palomino Lima</title>
-
-    <style>
-        /* PALETA NUDE PROFESIONAL */
-        :root {
-            --nude-light: #f7ece7;
-            --nude: #e8d4c7;
-            --nude-dark: #c8a898;
-            --brown-soft: #7a5f52;
-            --brown-dark: #4a372f;
-            --white: #ffffff;
-        }
-
-        body {
-            font-family: "Poppins", sans-serif;
-            background-color: var(--nude-light);
-            margin: 0;
-            color: var(--brown-dark);
-        }
-
-        /* NAVBAR */
-        nav {
-            background-color: var(--brown-soft);
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        nav a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* SECCIONES */
-        section {
-            padding: 50px 15%;
-        }
-
-        h2 {
-            color: var(--brown-dark);
-            border-left: 6px solid var(--nude-dark);
-            padding-left: 10px;
-        }
-
-        /* TARJETAS DE COMPAÑEROS */
-        .card-container {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .card {
-            background-color: var(--white);
-            width: 260px;
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card a {
-            color: var(--brown-dark);
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        /* CONTACTO */
-        .contact-box {
-            background-color: var(--white);
-            padding: 20px;
-            border-radius: 12px;
-            width: fit-content;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Personal de Yaely</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #FFF8F5;
+      color: #4A3F35;
+    }
+    header {
+      background: #EADBD0;
+      padding: 2rem;
+      text-align: center;
+      color: #4A3F35;
+      border-bottom: 3px solid #F2C9C9;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: #ffffff;
+      padding: 1.8rem;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      margin-bottom: 1.8rem;
+      border-left: 6px solid #EADBD0;
+    }
+    h2 {
+      color: #C7A59A;
+    }
+    a {
+      color: #C7A59A;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
+  <nav style="display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:#ffffff; border-bottom:2px solid #EADBD0; position:sticky; top:0;">
+    <div style="font-size:1.4rem; font-weight:bold; color:#C7A59A;">Yaely Palomino Lima</div>
+    <div>
+      <a href="#inicio" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Inicio</a>
+      <a href="#sobre" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Sobre mí</a>
+      <a href="#habilidades" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Habilidades</a>
+      <a href="#cursos" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Cursos</a>
+      <a href="#companeros" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Compañeros</a>
+      <a href="#contacto" style="color:#4A3F35; text-decoration:none;">Contacto</a>
+    </div>
+  </nav>
+  <header>
+    <h1>Yaely Palomino Lima</h1>
+    <p>Estudiante de Administración de Negocios en la Universidad Católica San Pablo</p>
+  </header>
 
-    <!-- NAVBAR -->
-    <nav>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#companeros">Compañeros</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+  <section id="inicio">
+    <div class="card">
+      <h2 id="sobre">Sobre mí</h2>
+      <p>Holi, soy Yaely ✨ Estudiante de Administración de Negocios y amante del aprendizaje constante. Me interesa cómo las empresas toman decisiones, cómo se organizan y cómo las personas influyen en ellas. Me gusta explorar nuevas ideas, mejorar cada día y encontrar oportunidades para crecer tanto personal como profesionalmente.</p>
+    </div>
 
-    <!-- SOBRE MI -->
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p><strong>Holi, soy Yaely.</strong><br>
-        Soy estudiante de Administración de Negocios y me encanta entender cómo funcionan las organizaciones y cómo toman decisiones estratégicas que impactan en su crecimiento.  
-        Me considero una persona curiosa, siempre con ganas de aprender, asumir nuevos retos y desarrollar habilidades que aporten a mi formación profesional y personal.</p>
-    </section>
+    <div class="card">
+      <h2 id="habilidades">Habilidades</h2>
+      <p><strong>Responsable:</strong> Cumplo con mis tareas y plazos con organización y constancia.</p>
+      <p><strong>Proactiva:</strong> Busco soluciones y aporto ideas antes de que sean necesarias.</p>
+      <p><strong>Resiliente:</strong> Enfrento dificultades manteniendo una actitud positiva y enfocada.</p>
+      <p><strong>Trabajo en equipo:</strong> Colaboro con mis compañeros de manera respetuosa y eficiente.</p>
+      <p><strong>Comunicación asertiva:</strong> Expreso ideas con claridad y empatía.</p>
+    </div>
 
-    <!-- COMPAÑEROS -->
-    <section id="companeros">
-        <h2>Mis compañeros</h2>
+    <div class="card">
+      <h2 id="cursos">Cursos y Profesores</h2>
+      <ul>
+        <li>Filosofía de la Naturaleza</li>
+        <li>Historia del Occidente I</li>
+        <li>Liderazgo</li>
+        <li>Cálculo en una Variable</li>
+        <li>Pensamiento Computacional</li>
+        <li>Análisis Financiero</li>
+        <li>Comportamiento del Consumidor</li>
+      </ul>
+    </div>
 
-        <div class="card-container">
+    <div class="card">
+      <h2 id="companeros">Compañeros</h2>
+      <p><a href="https://danielavegab.github.io/" target="_blank">Daniela Vega</a></p>
+      <p><a href="https://cielogrp.github.io/Cielo-Geraldine-Romero-Pe-a/" target="_blank">Cielo Romero</a></p>
+    </div>
 
-            <div class="card">
-                <h3>Daniela Vega</h3>
-                <a href="https://danielavegab.github.io/" target="_blank">Visitar página</a>
-            </div>
+    <div class="card">
+      <h2>LinkedIn</h2>
+      <p><a href="https://www.linkedin.com/in/yaely-palomino-lima-b94555396?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Mi perfil de LinkedIn</a></p>
+    </div>
 
-            <div class="card">
-                <h3>Cielo Geraldine Romero</h3>
-                <a href="https://cielogrp.github.io/Cielo-Geraldine-Romero-Pe-a/" target="_blank">Visitar página</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-
-        <div class="contact-box">
-            <p><strong>Nombre:</strong> Yaely Yahani Palomino Lima</p>
-            <p><strong>Correo personal:</strong> yaelyyiyi@gmail.com</p>
-            <p><strong>Correo institucional:</strong> yaely.palomino@ucsp.edu.pe</p>
-            <p><strong>Teléfono:</strong> 906 701 732</p>
-        </div>
-    </section>
-
+    <div class="card">
+      <h2 id="contacto">Contacto</h2>
+      <p><strong>Nombre:</strong> Yaely Yahani Palomino Lima</p>
+      <p><strong>Teléfono:</strong> 906 701 732</p>
+      <p><strong>Correo personal:</strong> yaelyyiyi@gmail.com</p>
+      <p><strong>Correo institucional:</strong> yaely.palomino@ucsp.edu.pe</p>
+    </div>
+  </section>
 </body>
 </html>

@@ -13,11 +13,12 @@
     }
     header {
       background: #EADBD0;
-      padding: 2rem;
+      padding: 3rem 2rem;
       text-align: center;
       color: #4A3F35;
       border-bottom: 3px solid #F2C9C9;
     }
+    section, h2 { scroll-margin-top: 120px; }
     section {
       padding: 2rem;
       max-width: 900px;
@@ -41,10 +42,31 @@
     a:hover {
       text-decoration: underline;
     }
+    /* Tarjetas de hobbies */
+    .hobby-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .hobby-card {
+      background: #FFF;
+      width: 160px;
+      padding: 1.3rem 1rem;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      border-left: 6px solid #F2C9C9;
+    }
+    .hobby-icon {
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
   </style>
 </head>
 <body>
-  <nav style="display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:#ffffff; border-bottom:2px solid #EADBD0; position:sticky; top:0;">
+  <nav style="display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:#ffffff; border-bottom:2px solid #EADBD0; position:sticky; top:0; z-index:1000;">
     <div style="font-size:1.4rem; font-weight:bold; color:#C7A59A;">Yaely Palomino Lima</div>
     <div>
       <a href="#inicio" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Inicio</a>
@@ -52,32 +74,42 @@
       <a href="#habilidades" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Habilidades</a>
       <a href="#cursos" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Cursos</a>
       <a href="#companeros" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Compañeros</a>
+      <a href="#hobbies" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Hobbies</a>
       <a href="#contacto" style="color:#4A3F35; text-decoration:none;">Contacto</a>
     </div>
   </nav>
+
   <header>
     <h1>Yaely Palomino Lima</h1>
     <p>Estudiante de Administración de Negocios en la Universidad Católica San Pablo</p>
   </header>
 
-  <section id="inicio">
-    <div class="card">
-      <h2 id="sobre">Sobre mí</h2>
-      <p>Holi, soy Yaely.
-        Tengo 18 años y soy estudiante de Administración de Negocios. Me interesa cómo las empresas toman decisiones, cómo se organizan y cómo las personas influyen en ellas. Me gusta explorar nuevas ideas, mejorar cada día y encontrar oportunidades para crecer tanto personal como profesionalmente.</p>
-    </div>
+  <section id="inicio" style="padding:7rem 2rem; min-height:80vh; display:flex; flex-direction:column; justify-content:center; text-align:center;">
+  <h2>Inicio</h2>
+  <p>Bienvenid@ a mi página personal ✨</p>
+</section>
 
+  <section id="sobre">
     <div class="card">
-      <h2 id="habilidades">Habilidades</h2>
+      <h2>Sobre mí</h2>
+      <p>Holi, soy Yaely. Tengo 18 años y soy estudiante de Administración de Negocios. Me interesa cómo las empresas toman decisiones, cómo se organizan y cómo las personas influyen en ellas. Me gusta explorar nuevas ideas, mejorar cada día y encontrar oportunidades para crecer tanto personal como profesionalmente.</p>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <div class="card">
+      <h2>Habilidades</h2>
       <p><strong>Responsable:</strong> Cumplo con mis tareas y plazos con organización y constancia.</p>
       <p><strong>Proactiva:</strong> Busco soluciones y aporto ideas antes de que sean necesarias.</p>
       <p><strong>Resiliente:</strong> Enfrento dificultades manteniendo una actitud positiva y enfocada.</p>
       <p><strong>Trabajo en equipo:</strong> Colaboro con mis compañeros de manera respetuosa y eficiente.</p>
       <p><strong>Comunicación asertiva:</strong> Expreso ideas con claridad y empatía.</p>
     </div>
+  </section>
 
+  <section id="cursos">
     <div class="card">
-      <h2 id="cursos">Cursos y Profesores</h2>
+      <h2>Cursos y Profesores</h2>
       <ul>
         <li>Filosofía de la Naturaleza</li>
         <li>Historia del Occidente I</li>
@@ -88,25 +120,60 @@
         <li>Comportamiento del Consumidor</li>
       </ul>
     </div>
+  </section>
 
+  <section id="hobbies">
     <div class="card">
-      <h2 id="companeros">Compañeros</h2>
+      <h2>Hobbies</h2>
+      <div class="hobby-grid">
+        <div class="hobby-card">
+          <span class="hobby-icon">🌍</span>
+          <strong>Viajar</strong>
+          <p>Conocer lugares nuevos</p>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">📚</span>
+          <strong>Leer</strong>
+          <p>Libros que inspiran</p>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">⛰️</span>
+          <strong>Trekking</strong>
+          <p>Conectar con la naturaleza</p>
+        </div>
+        <div class="hobby-card">
+          <span class="hobby-icon">💡</span>
+          <strong>Marketing</strong>
+          <p>Creatividad y estrategia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="companeros">
+    <div class="card">
+      <h2>Compañeros</h2>
       <p><a href="https://danielavegab.github.io/" target="_blank">Daniela Vega</a></p>
       <p><a href="https://cielogrp.github.io/Cielo-Geraldine-Romero-Pe-a/" target="_blank">Cielo Romero</a></p>
     </div>
+  </section>
 
+  <section>
     <div class="card">
       <h2>LinkedIn</h2>
       <p><a href="https://www.linkedin.com/in/yaely-palomino-lima-b94555396?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Mi perfil de LinkedIn</a></p>
     </div>
+  </section>
 
+  <section id="contacto">
     <div class="card">
-      <h2 id="contacto">Contacto</h2>
+      <h2>Contacto</h2>
       <p><strong>Nombre:</strong> Yaely Yahani Palomino Lima</p>
       <p><strong>Teléfono:</strong> 906 701 732</p>
       <p><strong>Correo personal:</strong> yaelyyiyi@gmail.com</p>
       <p><strong>Correo institucional:</strong> yaely.palomino@ucsp.edu.pe</p>
     </div>
   </section>
+
 </body>
 </html>

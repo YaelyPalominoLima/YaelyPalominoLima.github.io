@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página Personal de Yaely</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,19 +12,61 @@
       background: #FFF8F5;
       color: #4A3F35;
     }
-    header {
-      background: #EADBD0;
-      padding: 3rem 2rem;
-      text-align: center;
-      color: #4A3F35;
-      border-bottom: 3px solid #F2C9C9;
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #ffffff;
+      border-bottom: 2px solid #EADBD0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
-    section, h2 { scroll-margin-top: 120px; }
+
+    nav a {
+      color: #4A3F35;
+      margin-right: 1.5rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #C7A59A;
+    }
+
+    /* HERO INICIO */
+    #inicio {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 2rem;
+    }
+
+    #inicio h1 {
+      font-size: 3rem;
+      color: #4A3F35;
+      margin-bottom: 1rem;
+    }
+
+    #inicio p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      color: #6b5a52;
+    }
+
+    /* GENERAL */
     section {
       padding: 2rem;
       max-width: 900px;
       margin: auto;
+      scroll-margin-top: 120px;
     }
+
     .card {
       background: #ffffff;
       padding: 1.8rem;
@@ -32,81 +75,99 @@
       margin-bottom: 1.8rem;
       border-left: 6px solid #EADBD0;
     }
+
     h2 {
       color: #C7A59A;
+      margin-top: 0;
     }
+
+    .hobby-grid {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+    }
+
+    .hobby-card {
+      flex: 1;
+      min-width: 160px;
+      background: #FFF;
+      padding: 1.2rem;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+      text-align: center;
+      border-top: 5px solid #F2C9C9;
+    }
+
+    .hobby-icon {
+      font-size: 2.2rem;
+      margin-bottom: .5rem;
+    }
+
     a {
       color: #C7A59A;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    /* Tarjetas de hobbies */
-    .hobby-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-    }
-    .hobby-card {
-      background: #FFF;
-      width: 160px;
-      padding: 1.3rem 1rem;
-      border-radius: 14px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      border-left: 6px solid #F2C9C9;
-    }
-    .hobby-icon {
-      font-size: 2.3rem;
-      margin-bottom: 0.5rem;
-      display: block;
-    }
   </style>
 </head>
+
 <body>
-  <nav style="display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:#ffffff; border-bottom:2px solid #EADBD0; position:sticky; top:0; z-index:1000;">
-    <div style="font-size:1.4rem; font-weight:bold; color:#C7A59A;">Yaely Palomino Lima</div>
+
+  <!-- NAV -->
+  <nav>
+    <div style="font-size:1.4rem; font-weight:bold; color:#C7A59A;">
+      Yaely Palomino Lima
+    </div>
     <div>
-      <a href="#inicio" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Inicio</a>
-      <a href="#sobre" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Sobre mí</a>
-      <a href="#habilidades" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Habilidades</a>
-      <a href="#cursos" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Cursos</a>
-      <a href="#companeros" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Compañeros</a>
-      <a href="#hobbies" style="margin-right:1.5rem; color:#4A3F35; text-decoration:none;">Hobbies</a>
-      <a href="#contacto" style="color:#4A3F35; text-decoration:none;">Contacto</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#companeros">Compañeros</a>
+      <a href="#contacto">Contacto</a>
     </div>
   </nav>
 
-  <header>
-    <h1>Yaely Palomino Lima</h1>
-    <p>Estudiante de Administración de Negocios en la Universidad Católica San Pablo</p>
-  </header>
+  <!-- HERO -->
+  <section id="inicio">
+    <h1>¡Hola! Soy Yaely Palomino Lima</h1>
+    <p>
+      Estudiante de Administración de Negocios en la Universidad Católica San Pablo.
+      Bienvenida a mi página personal <3
+    </p>
+  </section>
 
-  <section id="inicio" style="padding:7rem 2rem; min-height:80vh; display:flex; flex-direction:column; justify-content:center; text-align:center;">
-  <h2>Inicio</h2>
-  <p>Bienvenid@ a mi página personal ✨</p>
-</section>
-
+  <!-- SOBRE MÍ -->
   <section id="sobre">
     <div class="card">
       <h2>Sobre mí</h2>
-      <p>Holi, soy Yaely. Tengo 18 años y soy estudiante de Administración de Negocios. Me interesa cómo las empresas toman decisiones, cómo se organizan y cómo las personas influyen en ellas. Me gusta explorar nuevas ideas, mejorar cada día y encontrar oportunidades para crecer tanto personal como profesionalmente.</p>
+      <p>
+        Holi, soy Yaely.
+        Tengo 18 años y soy estudiante de Administración de Negocios.
+        Me interesa cómo las empresas toman decisiones, cómo se organizan y cómo
+        las personas influyen en ellas. Me gusta explorar nuevas ideas, mejorar cada
+        día y encontrar oportunidades para crecer tanto personal como profesionalmente.
+      </p>
     </div>
   </section>
 
+  <!-- HABILIDADES -->
   <section id="habilidades">
     <div class="card">
       <h2>Habilidades</h2>
-      <p><strong>Responsable:</strong> Cumplo con mis tareas y plazos con organización y constancia.</p>
-      <p><strong>Proactiva:</strong> Busco soluciones y aporto ideas antes de que sean necesarias.</p>
-      <p><strong>Resiliente:</strong> Enfrento dificultades manteniendo una actitud positiva y enfocada.</p>
-      <p><strong>Trabajo en equipo:</strong> Colaboro con mis compañeros de manera respetuosa y eficiente.</p>
+      <p><strong>Responsable:</strong> Cumplo tareas con organización y constancia.</p>
+      <p><strong>Proactiva:</strong> Busco soluciones y aporto ideas.</p>
+      <p><strong>Resiliente:</strong> Mantengo una actitud positiva ante dificultades.</p>
+      <p><strong>Trabajo en equipo:</strong> Colaboro con respeto y eficiencia.</p>
       <p><strong>Comunicación asertiva:</strong> Expreso ideas con claridad y empatía.</p>
     </div>
   </section>
 
+  <!-- CURSOS -->
   <section id="cursos">
     <div class="card">
       <h2>Cursos y Profesores</h2>
@@ -122,34 +183,36 @@
     </div>
   </section>
 
+  <!-- HOBBIES -->
   <section id="hobbies">
     <div class="card">
       <h2>Hobbies</h2>
+
       <div class="hobby-grid">
         <div class="hobby-card">
-          <span class="hobby-icon">🌍</span>
-          <strong>Viajar</strong>
-          <p>Conocer lugares nuevos</p>
+          <div class="hobby-icon">🌍</div>
+          <p><strong>Viajar</strong><br>Conocer lugares nuevos</p>
         </div>
+
         <div class="hobby-card">
-          <span class="hobby-icon">📚</span>
-          <strong>Leer</strong>
-          <p>Libros que inspiran</p>
+          <div class="hobby-icon">📚</div>
+          <p><strong>Leer</strong><br>Libros que inspiran</p>
         </div>
+
         <div class="hobby-card">
-          <span class="hobby-icon">⛰️</span>
-          <strong>Trekking</strong>
-          <p>Conectar con la naturaleza</p>
+          <div class="hobby-icon">🏔️</div>
+          <p><strong>Trekking</strong><br>Conectar con la naturaleza</p>
         </div>
+
         <div class="hobby-card">
-          <span class="hobby-icon">💡</span>
-          <strong>Marketing</strong>
-          <p>Creatividad y estrategia</p>
+          <div class="hobby-icon">💡</div>
+          <p><strong>Marketing</strong><br>Creatividad y estrategia</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- COMPAÑEROS -->
   <section id="companeros">
     <div class="card">
       <h2>Compañeros</h2>
@@ -158,13 +221,7 @@
     </div>
   </section>
 
-  <section>
-    <div class="card">
-      <h2>LinkedIn</h2>
-      <p><a href="https://www.linkedin.com/in/yaely-palomino-lima-b94555396?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Mi perfil de LinkedIn</a></p>
-    </div>
-  </section>
-
+  <!-- CONTACTO -->
   <section id="contacto">
     <div class="card">
       <h2>Contacto</h2>
